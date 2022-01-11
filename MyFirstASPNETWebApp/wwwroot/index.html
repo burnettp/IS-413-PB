@@ -1,0 +1,65 @@
+﻿<!--Parker Burnett
+Section 2
+First Basic Website in ASP.Net-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--Adds a title to the site-->
+    <title>Parker's Website'</title>
+    <!--Adds an icon to the navigation bar at the top-->
+    <link rel="icon" href="img/hikingpic.jpg" type="image/icon type">
+    <!--Adds bootstrap and other css styling-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+<body>
+    <!--Title with my preferred name-->
+    <h1>My Name Is Parker</h1>
+    <!--Picture of me doing something I love-->
+    <img src="img/hikingpic.jpg" alt="Picture of me and my family on a hike" height="200"/>
+
+    <br />
+
+    <!--Paragraph on what I hope to get out of IS 413-->
+    <p>I am really looking forward to this class because I want to be a competent web developer. Something I want to learn this semester is how to learn by practicing.
+        Sometimes, I just follow along with videos and try to get my homework done as soon as possible, but this semester I want to really learn the material.
+    </p>
+
+    <!--A list of the top 3 jobs I'm interested in pursuing-->
+    <label for="jobList">Jobs I am Interested In: </label>
+    <ul id="jobList">
+        <li>NetSuite Consulting/General Consulting</li>
+        <li>Project Management</li>
+        <li>Web Development</li>
+    </ul>
+
+    <!--A grade calculator-->
+    <p>Enter The Percentage Scored for Each Grade Category: </p>
+    <form id="gradeCalc">
+        <label>Assignments: </label>
+        <input type="number" id="assignments" />%<br />
+
+        <label>Group Project: </label>
+        <input type="number" id="groupProject" />%<br />
+
+        <label>Quizzes: </label>
+        <input type="number" id="quizzes" />%<br />
+
+        <label>Exams: </label>
+        <input type="number" id="exams" />%<br />
+
+        <label>Intex: </label>
+        <input type="number" id="intex" />%<br />
+        
+        <input id="gradeSubmit" type="button" value="Submit Grades" onclick="addTotal()" />
+    </form>
+
+    <!--Links to the javascript and bootstrap files-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/gradeCalc.js"></script>
+
+</body>
+</html>

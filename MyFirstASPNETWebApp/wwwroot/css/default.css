@@ -1,0 +1,13 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    color: red;
+}
+
+label {
+    width: 200px;
+    color: red;
+    display: inline-block;
+}
