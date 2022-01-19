@@ -1,0 +1,43 @@
+﻿<!--Parker Burnett
+Section 2
+First Basic Website in ASP.Net
+Mission 3-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--Adds a dynamic title to the site-->
+    <title>@ViewData["Title"]</title>
+
+    <!--Adds an icon to the navigation bar at the top-->
+    <link rel="icon" href="img/hikingpic.jpg" type="image/icon type">
+
+    <!--Adds bootstrap and other css styling-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Links to the javascript and bootstrap files-->
+    <script src="js/gradeCalc.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

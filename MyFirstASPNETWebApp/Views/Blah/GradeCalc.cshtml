@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model GradeCalcModel;
+
+<!--A grade calculator-->
+<p>Enter The Percentage Scored for Each Grade Category: </p>
+<form id="gradeCalc" method="post">
+    <label>Assignments: </label>
+    <input type="number" id="assignments" asp-for="Assignments" />%<br />
+
+    <label>Group Project: </label>
+    <input type="number" id="groupProject" asp-for="GroupProject" />%<br />
+
+    <label>Quizzes: </label>
+    <input type="number" id="quizzes" asp-for="Quizzes" />%<br />
+
+    <label>Exams: </label>
+    <input type="number" id="exams" asp-for="Exams" />%<br />
+
+    <label>Intex: </label>
+    <input type="number" id="intex" asp-for="Intex" />%<br />
+
+    <button id="gradeSubmit" type="submit" onclick="addTotal()">Submit Grades</button>
+    <div asp-validation-summary="All"></div>
+
+    <!--
+    You are still able to submit my form with invalid data, but an error message will be displayed in a DIV on the page.
+    I could make it so that you aren't ever allowed to enter invalid data and submit, but I feel like this is a better demonstration that
+    -->
+
+</form>
